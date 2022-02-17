@@ -1,0 +1,32 @@
+#include <string>
+#include <iostream>
+#include <Windows.h>
+
+int main()
+{
+	std::cout << "Zero Width Space Unicode Checker(ZWSUC) \n \n \n";
+	std::cout << "Enter the phrase: ";
+	std::string phrase;
+	std::cin >> phrase;
+
+	char ZWSUC = '​';       // The unicode char, U+200
+
+	for (int COUNT = { 0 }; COUNT < phrase.size(); COUNT++)
+	{
+		if (phrase[COUNT] == ZWSUC)
+		{
+			std::cout << "There is a Zero Width Space Unicode Char in the phrase you have provided! \n";
+			COUNT--;
+			std::cout << "The ZWSUC is located next to: " << phrase[COUNT];
+			std::cout << "\n \n \n \n";
+			break;
+		}
+		else
+		{
+			std::cout << "No ZWSUC were found! \n";
+			Sleep(10000);  //Puts the program to sleep so it doesnt close
+			return 0;
+		}
+	}
+
+}

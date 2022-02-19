@@ -12,3 +12,5 @@ This program was desgin to check small phrases.
 -HOW TO USE-
 
 + Just put in a phrase as user input lol
+
+___Made this for account checking. Thank me later garry

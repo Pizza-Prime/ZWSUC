@@ -1,6 +1,6 @@
 # ZWSUC
 
-(CURRENTLY ONLY SUPPORTS x64 MACHNINES)
+(CURRENTLY ONLY SUPPORTS x64 MACHINES)
 Extremely simple program to check if a phrase has a Zero Width Space (U+200) problem. The issue usually occurs in Java code but the checker is made out of C++ to check if accounts have the Zero Width Space issue. 
 
 -Do not improt raw java code into this program if you think your java code has the ZWSUC problem.
